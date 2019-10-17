@@ -10,6 +10,9 @@ class CastsController < ApplicationController
   # GET /casts/1
   # GET /casts/1.json
   def show
+
+   @comments = @cast.comments.all
+   @comment = @cast.comments.build
   end
 
   # GET /casts/new
