@@ -6,8 +6,8 @@
   <thead>
     <tr>
       <th>Name</th>
-      <th>About</th>
-      <th>Image</th>
+      <th>Description</th>
+      <th>Picture</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,8 +16,8 @@
     <% @casts.each do |cast| %>
       <tr>
         <td><%= cast.name %></td>
-        <td><%= cast.about %></td>
-        <td><%= cast.image %></td>
+        <td><%= cast.description %></td>
+        <td><%= cast.picture %></td>
         <td><%= link_to 'Show', cast %></td>
         <td><%= link_to 'Edit', edit_cast_path(cast) %></td>
         <td><%= link_to 'Destroy', cast, method: :delete, data: { confirm: 'Are you sure?' } %></td>

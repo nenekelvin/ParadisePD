@@ -17,7 +17,7 @@ class CastsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create cast" do
     assert_difference('Cast.count') do
-      post casts_url, params: { cast: { about: @cast.about, image: @cast.image, name: @cast.name } }
+      post casts_url, params: { cast: { description: @cast.description, name: @cast.name, picture: @cast.picture } }
     end
 
     assert_redirected_to cast_url(Cast.last)
@@ -34,7 +34,7 @@ class CastsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update cast" do
-    patch cast_url(@cast), params: { cast: { about: @cast.about, image: @cast.image, name: @cast.name } }
+    patch cast_url(@cast), params: { cast: { description: @cast.description, name: @cast.name, picture: @cast.picture } }
     assert_redirected_to cast_url(@cast)
   end
 

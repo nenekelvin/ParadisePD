@@ -14,9 +14,9 @@ class CastsTest < ApplicationSystemTestCase
     visit casts_url
     click_on "New Cast"
 
-    fill_in "About", with: @cast.about
-    fill_in "Image", with: @cast.image
+    fill_in "Description", with: @cast.description
     fill_in "Name", with: @cast.name
+    fill_in "Picture", with: @cast.picture
     click_on "Create Cast"
 
     assert_text "Cast was successfully created"
@@ -27,9 +27,9 @@ class CastsTest < ApplicationSystemTestCase
     visit casts_url
     click_on "Edit", match: :first
 
-    fill_in "About", with: @cast.about
-    fill_in "Image", with: @cast.image
+    fill_in "Description", with: @cast.description
     fill_in "Name", with: @cast.name
+    fill_in "Picture", with: @cast.picture
     click_on "Update Cast"
 
     assert_text "Cast was successfully updated"
