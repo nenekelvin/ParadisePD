@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @cast.name %>
+</p>
+
+<p>
+  <strong>About:</strong>
+  <%= @cast.about %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @cast.image %>
+</p>
+
+<%= link_to 'Edit', edit_cast_path(@cast) %> |
+<%= link_to 'Back', casts_path %>
