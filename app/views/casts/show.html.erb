@@ -1,9 +1,5 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Picture:</strong>
-<%= image_tag(@cast.picture_url, width: 300) if @cast.picture.present? %>
-</p>
 
 <p>
   <strong>Name:</strong>
@@ -15,7 +11,10 @@
   <%= @cast.description %>
 </p>
 
-
+<p>
+  <strong>Picture:</strong>
+<%= image_tag(@cast.picture_url, width: 300) if @cast.picture.present? %>
+</p>
 
 
 <%= link_to 'Edit', edit_cast_path(@cast) %> |
