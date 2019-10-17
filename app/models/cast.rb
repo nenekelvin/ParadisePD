@@ -1,3 +1,3 @@
 class Cast < ApplicationRecord
-	mount_uploader :picture, PictureUploader
+ mount_uploader :picture, PictureUploader
 end
