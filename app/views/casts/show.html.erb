@@ -14,7 +14,7 @@
 <p>
   <strong>Picture:</strong>
 <%= image_tag(@cast.picture_url, width: 300) if @cast.picture.present? %>
-<h3>Comments</h3>
+<h3>Comment</h3>
 <% @comments.each do |comment| %>
   <div>
     <strong><%= comment.user_name %></strong>
